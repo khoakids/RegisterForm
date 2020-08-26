@@ -36,7 +36,7 @@ namespace Web.Controllers
                 var employee = employeeRepository.Get(id.Value);
                 if (employee == null)
                 {
-                    //ViewBag.id = id.Value;
+                   
                     return View("~/Views/Error/EmployeeNotFound.cshtml", id.Value);
                 }
                 var detailViewModel = new HomeDetailViewModel()
