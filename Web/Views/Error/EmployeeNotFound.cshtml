@@ -1,0 +1,18 @@
+﻿@model int
+@{ 
+    ViewBag.Title = "Employee Not Found";
+}
+
+<div class="alert alert-danger mt-2">
+    <h1>
+        Error 404!
+    </h1>
+    <hr />
+    <h1>
+        @*Nhân viên @ViewBag.id.ToString() không được tìm thấy!*@
+        Nhân viên @Model không được tìm thấy!
+    </h1>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-warning" style="width: auto">
+        Nhấn vào đây để hiển thị toàn bộ nhân viên
+    </a>
+</div>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Resoure Not Found";
+}
+
+<div class="alert alert-danger mt-2">
+    <h1>
+        @ViewBag.ErrorMessage
+    </h1>
+    <hr />
+    <h1>
+        @*Nhân viên @ViewBag.id.ToString() không được tìm thấy!*@
+        Vui lòng liên hệ với admin anhkhoa@codegym.vn
+    </h1>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-warning" style="width: auto">
+        Nhấn vào đây để trở về trang chủ
+    </a>
+</div>
