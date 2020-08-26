@@ -22,25 +22,14 @@ namespace Web.Controllers
             this.WebHostEnvironment = WebHostEnvironment;
         }
 
-        //[Route("~/")]
-        //[Route("Home")]
-        //[Route("Home/Index")]
         public ViewResult Index()
         {
-            //ViewData
-            //ViewData["employees"] = employeeRepository.Gets();
-
-            //ViewBag.Employees = employeeRepository.Gets();
             var employees = employeeRepository.Gets();
             return View(employees);
         }
 
-        //[Route("/Home/Details/{id}")]
         public ViewResult Details(int? id)
         {
-            //ViewBag.Employee = employeeRepository.Get(id);
-            //var employee = employeeRepository.Get(id);
-            //ViewBag.TitleName = "Employee Details";
             try
             {
                 int.Parse(id.Value.ToString());
